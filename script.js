@@ -1,5 +1,3 @@
-/* text_iife.js */
-// 텍스트 작성과 삭제 즉시 실행 함수
 (function(){
   const spanEl = document.querySelector("main h2 span");
   const txtArr = ['Web Publisher', 'Front-End Developer'];
@@ -27,10 +25,7 @@
   }
   writeTxt();
 })();
-/* end text_iife.js */
 
-/* scroll_request.js */
-/* 수직 스크롤이 발생하면 header 태그에 active 클래스 추가 및 삭제 */
 const headerEl = document.querySelector("header");
 window.addEventListener('scroll', function(){
   requestAnimationFrame(scrollCheck);
@@ -43,10 +38,7 @@ function scrollCheck(){
     headerEl.classList.remove("active");
   }
 }
-/* end scroll_request.js */
 
-/* move.js */
-/* 애니메이션 스크롤 이동 */
 const animationMove = function(selector){
   // ① selector 매개변로 이동할 대상 요소 노드 가져오기
   const targetEl = document.querySelector(selector);
@@ -65,4 +57,3 @@ for(let i = 0; i < scollMoveEl.length; i++){
     animationMove(target);
   });
 }
-/* End move.js */
